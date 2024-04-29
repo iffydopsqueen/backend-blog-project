@@ -1,0 +1,59 @@
+
+# POST http://localhost:5000/signup 
+# Content-Type: application/json
+
+# {
+#     "fullname": "Jane",
+#     "email": "janey@gmail.co",
+#     "password": "Password@123"
+# }
+
+# "access_token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2Mjk3YmUyNzI5MWE1NTFlMzdiMDgzNCIsImlhdCI6MTcxMzk5NDcyMn0.A_mZatgqD66fw22DF2Qmje7kMVfO-J9BAYlVDN0UPaY"
+
+# GET http://localhost:5000/get-upload-url
+
+# POST http://localhost:5000/create-blog
+# Content-Type: application/json
+# Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2Mjk3YmUyNzI5MWE1NTFlMzdiMDgzNCIsImlhdCI6MTcxMzk5NDcyMn0.A_mZatgqD66fw22DF2Qmje7kMVfO-J9BAYlVDN0UPaY
+
+# {
+#     "title": "First post test",
+#     "banner": "https://example.com/some-img.jpeg",
+#     "des": "This is my first post test",
+#     "content": {
+#         "blocks": [ 1, 2 ]
+#     },
+#     "tags": [ "test1", "test2" ]
+# }
+
+# GET http://localhost:5000/latest-blogs
+
+# GET http://localhost:5000/trending-blogs
+
+# POST http://localhost:5000/search-blogs 
+# Content-Type: application/json
+
+# {
+#     "tag": "tech"
+# }
+
+# POST http://localhost:5000/search-users 
+# Content-Type: application/json
+
+# {
+#     "query": "if"
+# }
+
+# POST http://localhost:5000/get-profile 
+# Content-Type: application/json
+
+# {
+#     "username": "ifyy12"
+# }
+
+POST http://localhost:5000/get-blog 
+Content-Type: application/json
+
+{
+    "blog_id": "Mindfulness-in-the-Digital-AgemO4Dq6iknVqcwUFbB6Uai"
+}
